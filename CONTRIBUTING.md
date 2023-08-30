@@ -19,7 +19,7 @@
 - Take a look at the existing [Issues](https://github.com/IIITians-Network-23/IIITiansNetwork/issues) or [create a new issue](https://github.com/IIITians-Network-23/IIITiansNetwork/issues/new/choose)!
 - [Fork the Repo](https://github.com/IIITians-Network-23/IIITiansNetwork/fork). Then, create a branch for any issue that you are working on. Finally, commit your work.
 - Create a **[Pull Request](https://github.com/IIITians-Network-23/IIITiansNetwork/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
-- Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes proposed in your PR.
+- Add screenshots or screen captures to your Pull Request to help us understan+d the effects of the changes proposed in your PR.
 
 
 ---
