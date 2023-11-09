@@ -22,7 +22,7 @@ const navbar = () => {
         </Link>
       </div>
 
-      <div className="flex flex-row gap-5 justify-between  items-center text-lg text-[#D5D0B2] ">
+      <div className="flex flex-row gap-10 justify-between  items-center text-lg text-[#D5D0B2] ">
         {links.map((link) => {
           return <Link href={link.href}>{link.title}</Link>;
         })}
