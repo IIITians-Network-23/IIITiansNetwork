@@ -8,6 +8,7 @@ import Avatar from "react-avatar";
 const links = [
   { title: "IIITs", href: "/iiit_page" },
   { title: "Alumini", href: "alumni_page" },
+  { title: "Events", href: "/" },
   { title: "Blogs", href: "/" },
   { title: "About Us", href: "/" },
 ];
