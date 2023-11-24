@@ -9,9 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.18",
+    "@mui/material": "^5.14.18",
     "autoprefixer": "10.4.15",
+    "bcryptjs": "^2.4.3",
     "eslint-config-next": "^14.0.1",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.1",
     "next": "^14.0.1",
+    "next-auth": "^4.24.5",
     "postcss": "8.4.28",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
