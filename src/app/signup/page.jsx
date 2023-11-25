@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Home() {
-
   const [error, setError] = useState("");
   const router = useRouter();
   // email validity check

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { useState } from "react";
+import { signOut, useSession } from "next-auth/react";
 
 const links = [
   { title: "IIITs", href: "/iiit_page" },
@@ -21,6 +22,7 @@ const navbar = () => {
     setShowMenu((preve) => !preve);
   };
 
+  const { data: session } = useSession();
 
   return (
     <header className="fixed bg-[#2E362B] flex justify-center w-full h-16">
@@ -40,13 +42,29 @@ const navbar = () => {
             );
           })}
           <div>
-            <AccountCircleOutlinedIcon style={{ fontSize: "2rem" }} onClick={handleShowMenu}/>
-            {showMenu &&
-            <div className="absolute bg-[#2E362B] z-1 text-[#D5D0B2] top-16 w-36 shadow-md" onClick={handleShowMenu}>
-              <Link href={"signup"}>
-                <div className="py-2 px-2">Register</div>
-              </Link>
-            </div>}
+            <AccountCircleOutlinedIcon
+              style={{ fontSize: "2rem" }}
+              onClick={handleShowMenu}
+            />
+            {showMenu && (
+              <div
+                className="absolute bg-[#2E362B] z-1 text-[#D5D0B2] top-16 w-36 shadow-md"
+                onClick={handleShowMenu}
+              >
+                {!session ? (
+                  <Link href={"signin"}>
+                    <div className="py-2 px-2">SignIn</div>
+                  </Link>
+                ) : (
+                  <>
+                    {session.user?.email}
+                    <button className="bg-red-500 px-2 py-3" onClick={() => {
+                      signOut();
+                    }}>Logout</button>
+                  </>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </div>
