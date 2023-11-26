@@ -111,3 +111,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// code for footer ends
