@@ -111,8 +111,8 @@ const Footer = () => {
 };
 
 export default Footer;
-<<<<<<< HEAD
-=======
+// <<<<<<< HEAD
+// =======
 
-// code for footer ends
->>>>>>> f7f0bfb63e81b056df62c13d292727e7bfbac3e2
+// // code for footer ends
+// >>>>>>> f7f0bfb63e81b056df62c13d292727e7bfbac3e2
