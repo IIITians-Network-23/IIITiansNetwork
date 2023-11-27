@@ -43,7 +43,6 @@ export default function Home() {
   };
 
   return (
-<<<<<<< HEAD
     <main className="w-full flex justify-center h-screen items-center">
       <div className="w-5/6 md:w-1/4 mx-auto bg-[#899277] border-black border-2 rounded-3xl p-6">
         <h1 className="text-[#333333] text-2xl mb-4 text-center font-bold">Register</h1>
@@ -122,7 +121,6 @@ export default function Home() {
           >
             Login with an existing account
           </Link>
->>>>>>> 284acfd9096eefd2e9b45623e5cd84e3000281af
         </form>
       </div>
     </main>
