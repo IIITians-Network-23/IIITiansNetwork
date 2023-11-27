@@ -70,7 +70,6 @@ export default function Home() {
           <p className="text-[#333333] text-center text-sm">already have an account? <Link href="/signin" className="text-[#333333] text-center text-sm">
             <span className="underline font-bold">Login</span>
           </Link></p>
-=======
     <main className="w-full pt-16 flex justify-center">
       <div className="pt-16 w-5/6 flex justify-center">
         <form
