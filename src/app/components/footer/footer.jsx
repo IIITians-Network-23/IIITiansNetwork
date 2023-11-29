@@ -67,7 +67,6 @@ const Footer = () => {
             <h2>Connect with us</h2>
           </div>
           <div className="flex gap-2">
-            {/* Social Media Icons */}
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={40} />
             </a>
