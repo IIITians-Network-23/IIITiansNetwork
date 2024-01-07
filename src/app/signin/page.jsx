@@ -35,28 +35,35 @@ export default function Home() {
   };
 
   return (
-    <main className="w-full flex justify-center">
-      <div className="pt-16 w-5/6 flex justify-center">
-        <form className="pt-4 flex flex-col w-1/4" onSubmit={handleSubmit}>
-          <label htmlFor="Email" className="text-[#D5D0B2]">
-            Email
-          </label>
-          <input type={"email"} placeholder="email" />
+    <main className="w-full flex justify-center h-screen items-center">
+      <div className="w-5/6 md:w-1/4 mx-auto bg-[#899277] border-black border-2 rounded-3xl p-6">
+        <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
 
-          <label htmlFor="Password" className="text-[#D5D0B2]">
-            Password
-          </label>
-          <input type={"password"} placeholder="password" />
+        <h1 className="text-[#333333] text-2xl mb-4 text-center font-bold">
+          Login
+        </h1>
 
-          <button className="py-2 px-3 bg-green-500 my-4" type="submit">
+          <input
+            type="email"
+            placeholder="Email Address"
+            className="input-field border-[#2E362B] border-2 rounded-lg bg-[#899277] placeholder-[#333333] h-10 pl-4 shadow-md"
+          />
+
+          <input
+            type="password"
+            placeholder="Password"
+            className="input-field border-[#2E362B] border-2 rounded-lg bg-[#899277] placeholder-[#333333] h-10 pl-4 shadow-md"
+          />
+
+          <button className="bg-[#D5D0B2] text-[#2E362B] py-2 px-3 rounded-md">
             Sign In
           </button>
 
           <p className="text-red-500 text-[16px] mb-4">{error && error}</p>
 
-          <Link href={"/signup"} className="text-[#D5D0B2]">
+          <p className="text-[#2E362B]">Don't have an account? <Link href={"/signup"} className="text-[#2E362B] underline">
             Signup here
-          </Link>
+          </Link></p>
         </form>
       </div>
     </main>
