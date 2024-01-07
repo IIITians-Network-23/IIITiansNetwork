@@ -50,13 +50,13 @@ const Footer = () => {
             <h1>Get Latest News</h1>
           </div>
           {/* Simple Form */}
-          <form className="flex gap-2 items-center flex-grow"> {/* Set flex-grow to fill the available space */}
+          <form className="flex gap-2 items-center flex-grow"> 
             <input
               type="email"
               placeholder="Your mail here"
-              className="border border-white rounded-md p-2 bg-transparent text-white placeholder-white flex-grow-1" // Updated text color and placeholder color
+              className="border border-white rounded-md p-2 bg-transparent text-white placeholder-white flex-grow-1"
             />
-            <button type="submit" className="bg-white text-black rounded-md p-2 shadow-md"> {/* Updated text color, added box shadow */}
+            <button type="submit" className="bg-white text-black rounded-md p-2 shadow-md"> 
               Subscribe
             </button>
           </form>
@@ -84,9 +84,8 @@ const Footer = () => {
       </div>
 
       {/* White Line */}
-      <div className="mx-auto border-t border-white my-4"></div> {/* Removed w-full, centered the line, and set mx-auto */}
+      <div className="mx-auto border-t border-white my-4"></div> 
 
-      {/* New Content: Clickable Links */}
       <div className="w-5/6 mx-auto flex items-center justify-center gap-4">
         <Link href="/website-terms" className="hover:underline transform transition-transform">
           Website Terms
@@ -102,7 +101,6 @@ const Footer = () => {
         </Link>
       </div>
 
-      {/* New Content: Additional Text Section */}
       <div className="w-full mx-auto text-center mt-4">
         Made by Tech Team IIITians Network @2023
       </div>
